@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Móvil Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f2ff;
+      color: #003f7f;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #007acc;
+      color: white;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background-color: #cce6ff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .producto h2 {
+      margin: 0.5rem 0;
+    }
+
+    .boton-comprar {
+      background-color: #005fa3;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .boton-comprar:hover {
+      background-color: #004a82;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #007acc;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda Móvil Online</h1>
+    <p>Los últimos modelos a los mejores precios</p>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200?text=iPhone+15+Pro+Max" alt="iPhone 15 Pro Max" />
+      <div class="producto-info">
+        <h2>iPhone 15 Pro Max</h2>
+        <p>$1,199</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200?text=Galaxy+S24+Ultra" alt="Galaxy S24 Ultra" />
+      <div class="producto-info">
+        <h2>Samsung Galaxy S24 Ultra</h2>
+        <p>$1,099</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200?text=Xiaomi+14+Pro" alt="Xiaomi 14 Pro" />
+      <div class="producto-info">
+        <h2>Xiaomi 14 Pro</h2>
+        <p>$899</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tienda Móvil Online. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
